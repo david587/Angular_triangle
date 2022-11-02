@@ -2,23 +2,22 @@
   <h1>{{title}}</h1>
 
   <div class="triangleForm">
-    <div>
-      <label for="base">Alap</label>
-      <!-- hogy el tudjuk érni a ts file-ból -->
-      <!-- app.module .ts ts ben importálni kell -->
-      <!-- base néven érjük el ts-ben -->
-      <input type="text" id="base" [(ngModel)]="base">
+    <div class="mb-3">
+      <label for="base" class="form-label">Alap</label>
+      <input type="text" id="base" [(ngModel)]="base" class="form-control">
     </div>
-    <div>
-      <label for="height">Magasság</label>
-      <input type="text" id="height" [(ngModel)]="height">
+    <div class="mb-3">
+      <label for="height" class="form-label">Magasság</label>
+      <input type="text" id="height" [(ngModel)]="height" class="form-control">
     </div>
 
-    <button (click)="calcArea()">Számit</button>
+    <button (click)="calcArea()"
+    class="btn btn-info my-3">Számit
+    </button>
 
-    <div>
-      <label for="area">Terület</label>
-      <input type="text" id="area" [(ngModel)]="area">
+    <div class="mb-3">
+      <label for="area" class="form-label">Terület</label>
+      <input type="text" id="area" [(ngModel)]="area" class="form-control">
     </div>
 
   </div>
