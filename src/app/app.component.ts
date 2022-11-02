@@ -11,10 +11,14 @@ export class AppComponent {
   base !: number;
   height!: number;
   area!: number;
+  areaShow = false;
 
   //osztályban nem kell function
 
   calcArea():void{
     this.area = this.base * this.height / 2;
+    this.base = 0;
+    this.height = 0;
+    this.areaShow= true;
   }
 }
