@@ -11,9 +11,10 @@
       <input type="text" id="height" [(ngModel)]="height" class="form-control" required>
     </div>
 
-    <button (click)="calcArea()"
+    <button (click)="calcHandle()"
     class="btn btn-info my-3">Számit
     </button>
+    <button (click)="hideArea()" class="btn btn-info ms-3">Elrejt</button>
 
     <div class="mb-3" *ngIf="areaShow">
       <label for="area" class="form-label">Terület</label>

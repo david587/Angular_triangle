@@ -15,9 +15,9 @@ export class AppComponent {
 
   //osztályban nem kell function
 
-  calcArea():void{
+  calcHandle():void{
     if(this.checkValidation()){
-      this.area = this.base * this.height / 2;
+      this.area = this.calcArea(this.base,this.height);
       this.base = 0;
       this.height = 0;
       this.areaShow= true;
@@ -25,6 +25,11 @@ export class AppComponent {
     else{
       alert("Hiba! Adjon meg adatot")
     }
+  }
+
+  calcArea(base: number, height: number) :number{
+    let area =base*height / 2;
+    return area;
   }
 
   checkValidation():boolean{
@@ -36,5 +41,8 @@ export class AppComponent {
       valid= false;
     }
     return valid;
+  }
+  hideArea():void{
+    this.areaShow = false;
   }
 }
