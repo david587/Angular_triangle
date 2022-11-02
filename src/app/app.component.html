@@ -4,11 +4,11 @@
   <div class="triangleForm">
     <div class="mb-3" >
       <label for="base" class="form-label">Alap</label>
-      <input type="text" id="base" [(ngModel)]="base" class="form-control">
+      <input type="text" id="base" [(ngModel)]="base" class="form-control" required>
     </div>
     <div class="mb-3">
       <label for="height" class="form-label">Magasság</label>
-      <input type="text" id="height" [(ngModel)]="height" class="form-control">
+      <input type="text" id="height" [(ngModel)]="height" class="form-control" required>
     </div>
 
     <button (click)="calcArea()"
